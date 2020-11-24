@@ -3,10 +3,10 @@ const dateFormat = require('../utils/dateFormat');
 
 const ReactionSchema = new Schema(
     {
-        // reactionId: {
-        //     type: Types.ObjectId(),
-        //     default: () => new Types.ObjectId()
-        // },
+        reactionId: {
+            type: Schema.Types.ObjectId,
+            default: () => new Types.ObjectId(),
+        },
         reactionBody: {
             type: String,
             required: 'Please Enter Your Reaction!',
@@ -27,10 +27,6 @@ const ReactionSchema = new Schema(
 
 const ThoughtSchema = new Schema(
     {
-        // thoughtId: {
-        //     type: Types.ObjectId(),
-        //     default: () => new Types.ObjectId()
-        // },
         thoughtText: {
             type: String,
             required: 'Please enter your thoughts in the form of text',
@@ -47,6 +43,10 @@ const ThoughtSchema = new Schema(
         //         User.username
         //     }
         // },
+        
+        userId: {
+            type: String
+         },
         reactions: [ReactionSchema]
     },
     {

@@ -20,10 +20,10 @@ const UserSchema = new Schema(
             unique: true,
             get: emailVal => validateEmail(emailVal)
         },
-        // thoughts: [{
-        //     type: Schema.Types.ObjectId,
-        //     ref: 'thought'
-        // }],
+        thoughts: [{
+            type: Schema.Types.ObjectId,
+            ref: 'Thought'
+        }],
         // friends: [this]
     },
     {
