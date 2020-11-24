@@ -15,7 +15,7 @@ router
 router
     .route('/:userId')
     .post(addThought);
-    
+
 router
     .route('/:thoughtId')
     .get(getThoughtById)
@@ -23,7 +23,7 @@ router
     .delete(removeThought)
 
 router
-    .route('/:thoughtId/reactions')
+    .route('/:userId/:thoughtId/reactions')
     .post(addReaction)
     .delete(removeReaction)
 
