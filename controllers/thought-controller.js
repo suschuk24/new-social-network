@@ -52,10 +52,6 @@ const ThoughtController = {
                 );
             })
             .then(dbUserData => {
-                if (!dbUserData) {
-                    res.status(404).json({ message: 'No User found with this id! second error' });
-                    return;
-                }
                 res.json(dbUserData);
             })
             .catch(err => res.json(err));
