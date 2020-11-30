@@ -11,7 +11,7 @@ This is a noSQL database using MongoDB that allows for API endpoints to interact
 
 - [Repository](#repository)
 - [Walkthrough Video](#walkthrough%20video)
-- [Example Screenshots](#examples)
+- [Examples](#examples)
 - [Usage](#usage)
 - [User Story](#user%20story)
 - [Acceptance Criteria](#Acceptance%20criteria)
@@ -30,7 +30,7 @@ This is a noSQL database using MongoDB that allows for API endpoints to interact
 ![walkthrough video]()
 ## Examples
 * User Object:
-* API Route: GET /api/users/:id
+* API Route: GET Request ```/api/users/:id```
 * NOTE: performing a GET request without ```:id``` results in a find all query
 
 ``` JSON
@@ -45,7 +45,7 @@ This is a noSQL database using MongoDB that allows for API endpoints to interact
 ```
 
 * Thought Object:
-* API Route: GET /api/thoguhts/:id
+* API Route: GET Request ```/api/thoguhts/:id```
 * NOTE: performing a GET request without ```:id``` results in a find all query
 
 ``` JSON
@@ -56,7 +56,7 @@ This is a noSQL database using MongoDB that allows for API endpoints to interact
   "createdAt": "Nov 29th, 2020 at 10:42 am",
   "reactions": [
     {
-      Reaction Object Elements
+      "Reaction Object Elements"
     }
   ],
   "reactionCount": 1
