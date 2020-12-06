@@ -27,7 +27,10 @@ This is a noSQL database using MongoDB that allows for API endpoints to interact
 - [This Repository](https://github.com/suschuk24/new-social-network)
 
 ## Walkthrough Video
-![walkthrough video]()
+[Link to Full Walkthrough Video](https://drive.google.com/file/d/1DwPkonZBtQ_PQzcU4BvixjY4QnE5O7s5/view)
+
+
+![Walkthrough GIF](public/images/walkthrough.gif)
 ## Examples
 * User Object:
 * API Route: GET Request ```/api/users/:id```
